@@ -33,9 +33,29 @@
 /***** Objekte 1 Daten/Funktionen *******/
 
 
+let person =    { //{} --> Zuweisung einer Variablen
+            firstName: "Sero",
+            familyName: "Al pay ci",
+            salary:[120000, 160000],
+            permission: true,
+            sayHello:
+                    function() {
+                        return "Hello, " + this.firstName + "!"; // this vor firstName, weil die Zuweisung innerhalb der Zuweisung "person" erfolgt, bezieht sich also auf das was innerhalb ist
+                    }
+                };
+
+// output (person);
+// output (person.firstName);
+// output (person.familyName);
+// output (person.salary[1]);
+// output (person.permission);
 
 
-
+// const text =    "Ich bin " + person.firstName +
+//                 " und verdiene " + person.salary[1] +
+//                 " p.a.";
+// output(text);
+// output(person.sayHello());
 
 
 /** Ausgabe */
