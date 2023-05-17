@@ -57,6 +57,27 @@ let person =    { //{} --> Zuweisung einer Variablen
 // output(text);
 // output(person.sayHello());
 
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{{}}}
+
+let baikal =    {
+                    value: "10am",
+                    deep:{
+                            deeper: {
+                                        deepest:"Das Licht - auf 1642m!",
+                                        temperature: "4 Grad Celsius"
+                                    }
+                         }
+                }
+
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+output(baikal.deep.deeper.temperature);
+
 
 /** Ausgabe */
 function output(outputData) {
